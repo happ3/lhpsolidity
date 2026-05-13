@@ -18,23 +18,9 @@ contract T {
     }
 }
 
-
-    contract M is S('s') {
-        constructor(string memory _name) {
-            
-        }
-    }
-
-    contract N is S {
-        constructor(string memory _name)S(_name) {
-            
-        }
-    }
- 
-
-    contract U is S("s"),T("t") {
-        
-    }
+contract U is S("s"),T("t") {
+    
+}
 
 contract V is S,T {
     constructor(string memory _name,string memory _text) S(_name) T(_text){
